@@ -1,13 +1,15 @@
 <p>A-Line Skirt Calculator</p>
 <div id="submit-location">
-    <h1> Submit a location! </h1>
+    <h1> Enter your details so that we can work out your pattern </h1>
     <form method="post" action="/submit">
-      <label for="name">Name: </label>
-      <input type="text" id="name" name="name" value="" placeholder="Enter a name if it has one" required="not required" autofocus="autofocus"  />
-      <label for="location">Location: </label>
-      <input type="text" id="location" name="location" value="" placeholder="Enter a postcode or address" required="required" autofocus="autofocus"  />
-      <label for="length">Length: </label>
-      <input type="text" id="length" name="length" value="" placeholder="length" required="not required" />
+      <label for="length">Skirt Length (use table as a guide if you are unable to measure): </label>
+      <input type="number" id="length" name="length" value="" placeholder="skirt length" required="not required" autofocus="autofocus"  />
+      <label for="waist">Waist measurement: </label>
+      <input type="number" id="waist" name="waist" value="" placeholder="Waist measurement" required="required" autofocus="autofocus"  />
+      <label for="length">Hip measurement: </label>
+      <input type="text" id="hip" name="hip" value="" placeholder="hip size" required="not required" />
+      <label for="waist_hip_distance">Distance from waist to hip: </label>
+      <input type="number" id="waist_hip_distance" name="waist_hip_distance" value="" placeholder="distance from waist to hip" required="not required" />
       <input type="submit" value= "Submit" id="submit button" />
     </form>
 </div>
