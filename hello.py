@@ -17,11 +17,11 @@ def calculators():
 def aline():
     return render_template("aline.html")
 #ask for length of skirt, add some suggestions in html
-skirt_length = raw_input(“how long do you want the skirt to be?”)
+skirt_length = input(“how long do you want the skirt to be?”)
 
 #ask for width of waist
 #ask for width of hips
-#distance from waist to hips 
+#distance from waist to hips
 
 
 
