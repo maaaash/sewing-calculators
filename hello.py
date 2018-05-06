@@ -17,10 +17,14 @@ def calculators():
 def aline():
     return render_template("aline.html")
 #ask for length of skirt, add some suggestions in html
-
 #ask for width of waist
 #ask for width of hips
 #distance from waist to hips
+if request.method == 'POST':
+    length = request.form['length']
+    waist = request.form['waist']
+    hip = request.form['hip']
+    waist_hip_distance = request.form['waist_hip_distance']
 
 
 
