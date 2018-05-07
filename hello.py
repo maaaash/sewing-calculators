@@ -25,13 +25,10 @@ if request.method == 'POST':
     waist = request.form['waist']
     hip = request.form['hip']
     waist_hip_distance = request.form['waist_hip_distance']
-    return render_template("aline.html")
+        return render_template("aline.html")
 #put some way of calculating waist here
 #pattern_waist = ('waist'/2)+1
 #do I need something to return the number?
-
-
-
 
 #unsure what this does
 if __name__ == "__main__":
