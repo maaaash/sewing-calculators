@@ -20,17 +20,18 @@ def aline():
 #ask for width of waist
 #ask for width of hips
 #distance from waist to hips
-if request.method == 'POST':
     length = float (request.form['length'])
     waist = float (request.form['waist'])
     hip = float (request.form['hip'])
-    waist_hip_distance = float(request.form['waist_hip_distance'])
-
-#put some way of calculating waist herE
-#do I need something to return the number?
-@app.route("/calculators/alineresult")
+    waist_hip_distance = float(request.form['waist_hip_distance']
+#put some way of calculating waist here
+@app.route("/calculators/alineresult",methods=['POST'])
 def alineresult():
-    return render_template("aline.html", pattern_waist=waist/2+1)
+    return render_template("aline.html", pattern_waist = waist/2)+1)
+
+
+#do I need something to return the number?
+
 #unsure what this does
 if __name__ == "__main__":
     app.run()
