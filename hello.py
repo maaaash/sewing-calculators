@@ -28,7 +28,9 @@ if request.method == 'POST':
 
 #put some way of calculating waist herE
 #do I need something to return the number?
-        return render_template("aline.html", pattern_waist=waist/2+1)
+@app.route("/calculators/alineresult")
+def alineresult():
+    return render_template("aline.html", pattern_waist=waist/2+1)
 #unsure what this does
 if __name__ == "__main__":
     app.run()
