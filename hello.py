@@ -25,7 +25,7 @@ def aline():
     hip = float (request.form['hip'])
     waist_hip_distance = float(request.form['waist_hip_distance']
 #put some way of calculating waist here
-@app.route("/calculators/alineresult",methods=['POST'])
+@app.route("/calculators/alineresult", methods=['POST'])
 def alineresult():
     return render_template("aline.html", pattern_waist = waist/2)+1)
 
