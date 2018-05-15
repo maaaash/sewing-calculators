@@ -27,7 +27,7 @@ def alineresult():
     waist = float (request.form['waist'])
     hip = float (request.form['hip'])
     waist_hip_distance = float(request.form['waist_hip_distance'])
-    return render_template("aline.html", pattern_waist = waist/2)
+    return render_template("aline.html", pattern_waist = waist+1/2, pattern_waist_hip_distance = waist_hip_distance, pattern_hip = hip+11/2)
 
 
 #do I need something to return the number?
