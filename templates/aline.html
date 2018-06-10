@@ -1,27 +1,90 @@
-<!DOCTYPE html>
-<html>
-<body>
 
-<p>A-Line Skirt Calculator</p>
-<div id="submit-location">
-    <h1> Enter your details so that we can work out your pattern </h1>
+<html>
+<head><style>
+
+body {
+    background-color: #f1f1f1;
+    padding: 20px;
+    font-family: Arial;
+}
+
+/* Center website */
+.main {
+    max-width: 1000px;
+    margin: auto;
+}
+
+h1 {
+    font-size: 20px;
+    word-break: break-all;
+    font-family: arial;
+}
+
+h2 {
+    font-size: 15px;
+    word-break: break-all;
+    font-family: arial;
+}
+
+
+.row {
+    margin: 10px -16px;
+}
+
+/* Add padding BETWEEN each column */
+.row,
+.row > .column {
+    padding: 8px;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 33.33%;
+    display: none; /* Hide all elements by default */
+}
+
+/* Clear floats after rows */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Content */
+.content {
+    background-color: white;
+    padding: 10px;
+}
+
+</style>
+</head>
+<div><h1>A-Line Skirt Calculator</h1></div>
+<body>
+<div id="getmeasurements">
+    <h2> Enter your details so that we can work out a  free pattern for your a-line skirt </h2>
     <form method="post" action="/calculators/alineresult">
-      <label for="length">Skirt Length (use table as a guide if you are unable to measure): </label>
-      <input type="number" id="length" name="length" value="" placeholder="skirt length" required="not required" autofocus="autofocus"  />
-      <label for="waist">Waist measurement: </label>
-      <input type="number" id="waist" name="waist" value="" placeholder="Waist measurement" required="required" autofocus="autofocus"  />
-      <label for="hip">Hip measurement: </label>
-      <input type="text" id="hip" name="hip" value="" placeholder="hip measurement" required="not required" />
-      <label for="waist_hip_distance">Distance from waist to hip: </label>
-      <input type="number" id="waist_hip_distance" name="waist_hip_distance" value="" placeholder="distance from waist to hip" required="not required" />
+     <p> <label for="length">Skirt Length (use table as a guide if you are unable to measure): </label>
+      <input type="number" id="length" name="length" value="" placeholder="skirt length" required="not required" autofocus="autofocus"  /></p>
+      <p><label for="waist">Waist measurement: </label>
+      <input type="number" id="waist" name="waist" value="" placeholder="Waist measurement" required="required" autofocus="autofocus"  /></p>
+      <p><label for="hip">Hip measurement: </label>
+      <input type="text" id="hip" name="hip" value="" placeholder="hip measurement" required="not required" /></p>
+      <p><label for="waist_hip_distance">Distance from waist to hip: </label>
+      <input type="number" id="waist_hip_distance" name="waist_hip_distance" value="" placeholder="distance from waist to hip" required="not required" /></p>
       <input type="submit" value= "Submit" id="submit button" />
     </form>
 </div>
 
 <div id= "pattern">
+  <h2>Trace two patterns as per the image with the dimensions below:</h2>
   <p>Waist: {{pattern_waist}}</p>
   <p>Distance between waist and hips: {{pattern_waist_hip_distance}}</p>
   <p>Hips: {{pattern_hip}}</p>
+  <p>Length: {{pattern_length}}</p>
+  <p>Hem:{{pattern_hem}}</p>
+  <p>Half Hem:{{pattern_half_hem}}</p>
 </div>
+<div><img src="/static/aline.jpeg" alt="a-line skirt pattern"> </div>
 </body>
 </html>
