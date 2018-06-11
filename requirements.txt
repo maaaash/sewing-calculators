@@ -1,0 +1,11 @@
+appdirs
+click
+Flask==0.12.1
+itsdangerous
+Jinja2==2.9.6
+MarkupSafe
+packaging
+pyparsing
+six
+Werkzeug==0.12.1
+gunicorn
