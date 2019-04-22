@@ -2,7 +2,7 @@ appdirs
 click
 Flask==0.12.1
 itsdangerous
-Jinja2==2.9.6
+Jinja2==2.10.1
 MarkupSafe
 packaging
 pyparsing
