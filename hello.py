@@ -4,7 +4,7 @@ app = Flask(__name__)
 #homepage
 @app.route("/")
 def hello():
-    return "Hello World!"
+    return render_template("calculators.html")
 #calculators topic need to build the html page
 @app.route("/calculators")
 def calculators():
