@@ -7,5 +7,5 @@ MarkupSafe
 packaging
 pyparsing
 six
-Werkzeug==0.12.1
+Werkzeug==0.15.3
 gunicorn
